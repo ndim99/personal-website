@@ -7,10 +7,8 @@ export default function ExperienceBox({
   description,
 }: ExperienceBoxProps) {
   return (
-    <div className="bg-primary-bg p-6 shadow-lg rounded-lg">
-      <h3 className="text-xl sm:text-2xl font-extrabold text-blue-300 mb-3">
-        {company}
-      </h3>
+    <div className="bg-gradient-to-r from-primary-bg via-secondary-bg to-primary-bg p-6 shadow-lg rounded-lg">
+      <h3 className="text-xl sm:text-2xl font-extrabold mb-3">{company}</h3>
       <p className="text-gray-300 text-lg sm:text-xl font-semibold mb-2">
         Position: Front-End Engineer
       </p>

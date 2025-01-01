@@ -2,8 +2,11 @@ import SkillBox from "./SkillBox";
 
 export default function Skills() {
   return (
-    <section id="skills" className="sm:py-20 py-12 bg-primary-bg">
-      <div className="container mx-auto px-6 flex flex-col sm:gap-8 gap-6">
+    <section
+      id="skills"
+      className="sm:py-20 py-12 bg-gradient-to-r from-primary-bg via-secondary-bg to-primary-bg"
+    >
+      <div className="container mx-auto px-6 flex flex-col sm:gap-8 gap-6 z-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-400">
           Skills
         </h2>

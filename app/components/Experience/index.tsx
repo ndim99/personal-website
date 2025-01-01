@@ -14,11 +14,7 @@ export default function Experience() {
     transition: { duration: 2, delay, repeat: Infinity, ease: "easeInOut" },
   });
   return (
-    <section
-      id="experience"
-      className="h-screen sm:py-20 py-12 relative"
-      ref={ref}
-    >
+    <section id="experience" className="sm:py-20 py-12 relative" ref={ref}>
       {/* Animated Numbers */}
       <div className="absolute inset-0 z-0 flex flex-wrap justify-center items-center">
         {Array.from({ length: 50 }, (_, i) => {
@@ -49,7 +45,7 @@ export default function Experience() {
           Experience
         </motion.h2>
 
-        <div className="space-y-6 z-10">
+        <div className="sm:space-y-8 space-y-6 z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
@@ -69,6 +65,20 @@ export default function Experience() {
             <ExperienceBox
               company="Ruby.Exchange"
               description="Ruby.Exchange is a decentralized trading platform built on the SKALE Network. I contributed to the development of a highly interactive and visually appealing interface, focusing on providing a smooth and efficient trading experience for crypto users. I utilized technologies such as React, Next.js, TypeScript, and blockchain-specific tools optimized for SKALE."
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+          >
+            <ExperienceBox
+              freelance
+              company="Freelance Front-End Developer"
+              description="As a freelance front-end developer, I worked on a variety of projects ranging from landing pages to full web applications. 
+              My expertise in React, Next.js, TypeScript, and Tailwind CSS allowed me to build highly interactive and user-friendly interfaces for clients in various industries. 
+              I collaborated with clients to define requirements, translate them into technical solutions, and deliver projects on time while ensuring a high standard of code quality."
             />
           </motion.div>
         </div>

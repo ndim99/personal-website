@@ -58,19 +58,35 @@ export default function Header() {
           menuOpen ? "block" : "hidden"
         } text-gray-300 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] py-2.5 px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}
       >
-        <Link href="#about" className="hover:text-white">
+        <Link
+          href="#about"
+          className="hover:text-white"
+          onClick={() => setMenuOpen(false)}
+        >
           About
         </Link>
 
-        <Link href="#experience" className="hover:text-white">
+        <Link
+          href="#experience"
+          className="hover:text-white"
+          onClick={() => setMenuOpen(false)}
+        >
           Experience
         </Link>
 
-        <Link href="#skills" className="hover:text-white">
+        <Link
+          href="#skills"
+          className="hover:text-white"
+          onClick={() => setMenuOpen(false)}
+        >
           Skills
         </Link>
 
-        <Link href="#contact" className="hover:text-white">
+        <Link
+          href="#contact"
+          className="hover:text-white"
+          onClick={() => setMenuOpen(false)}
+        >
           Contact
         </Link>
       </div>

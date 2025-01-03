@@ -12,7 +12,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 2xl:py-4 lg:py-3 py-2.5 flex justify-between items-center">
         <h1 className="lg:text-2xl text-xl font-bold text-white">
-          Nikola{"'"}s Portfolio
+          My Portfolio
         </h1>
 
         {/* Desktop Navigation */}

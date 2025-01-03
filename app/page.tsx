@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import BackToTopButton from "./components/BackToTop";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
@@ -7,7 +8,8 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div className="text-gray-100">
+    <div className="text-gray-100 relative">
+      <BackToTopButton />
       <Header />
       <Hero />
       <AboutMe />

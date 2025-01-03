@@ -1,34 +1,29 @@
 "use client";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function AboutMe() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <section
       id="about"
-      className="sm:py-20 py-12 bg-gradient-to-r from-primary-bg via-secondary-bg to-primary-bg z-20"
-      ref={ref}
+      className="sm:py-20 py-12 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
     >
-      <div className="container mx-auto px-6 flex flex-col sm:gap-8 gap-6 z-20">
+      <div className="container mx-auto px-6 flex flex-col sm:gap-8 gap-6">
         <motion.h2
+          className="text-3xl sm:text-4xl font-bold text-center"
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="text-3xl sm:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+          viewport={{ once: true }}
         >
           About Me
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
-          transition={{ duration: 1, delay: 0.5 }}
           className="text-gray-300 text-center max-w-2xl mx-auto text-base sm:text-lg"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
         >
           I am a results-driven front-end engineer with over 4 years of
           experience creating scalable, high-performance web applications that

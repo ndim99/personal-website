@@ -5,9 +5,9 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="fixed top-0 w-full bg-primary-bg shadow-md z-20">
+    <header className="fixed top-0 w-full bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] shadow-md z-20 border-b border-[#333]">
       <nav className="container mx-auto px-6 sm:py-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-white">
+        <h1 className="sm:text-2xl text-xl font-bold text-white">
           Nikola{"'"}s Portfolio
         </h1>
 
@@ -46,7 +46,7 @@ export default function Header() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-8 h-8"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"

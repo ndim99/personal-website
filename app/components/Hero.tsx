@@ -21,7 +21,7 @@ export default function Hero() {
       className="h-screen flex items-center justify-center text-center text-gray-100 relative overflow-hidden px-6 sm:px-12 lg:px-16"
     >
       {/* Animated Numbers */}
-      <div className="absolute inset-0 z-0 flex flex-wrap justify-center items-center">
+      <div className="absolute inset-1 z-0 flex flex-wrap justify-center items-center">
         {Array.from({ length: 50 }, (_, i) => {
           const delay = Math.random() * 2; // Random delay between 0 and 2 seconds
           return (
@@ -75,7 +75,7 @@ export default function Hero() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={scrollToSection}
-          className="mx-auto mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+          className="mx-auto mt-4 px-6 py-2.5 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-150"
         >
           Discover More
         </motion.button>

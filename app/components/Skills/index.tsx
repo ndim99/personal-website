@@ -10,12 +10,12 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="sm:py-20 py-12 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] relative overflow-hidden"
+      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] relative overflow-hidden"
     >
-      <div className="container mx-auto px-6 flex flex-col sm:gap-12 gap-8 z-20 relative">
+      <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6 z-10 relative">
         {/* Section Title */}
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-center"
+          className="text-3xl lg:text-4xl font-bold text-center"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -26,7 +26,7 @@ export default function Skills() {
 
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:gap-8 lg:gap-7 gap-6 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -71,13 +71,13 @@ export default function Skills() {
           ].map((skill, index) => (
             <motion.div
               key={index}
-              className="p-6 rounded-lg bg-[#0f0f0f] border border-[#333] shadow-xl backdrop-blur-md transition-all duration-300"
+              className="2xl:p-6 lg:p-5 p-4 rounded-lg bg-[#0f0f0f] border border-[#333] shadow-xl backdrop-blur-md transition-all duration-300"
               variants={fadeInVariant}
             >
-              <h3 className="text-xl sm:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+              <h3 className="text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                 {skill.title}
               </h3>
-              <p className="text-gray-300 mt-3 text-base sm:text-lg">
+              <p className="text-gray-300 mt-3 text-base lg:text-lg">
                 {skill.description}
               </p>
             </motion.div>

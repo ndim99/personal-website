@@ -5,11 +5,11 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="sm:py-20 py-12 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
+      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
     >
-      <div className="container mx-auto px-6 flex flex-col sm:gap-8 gap-6">
+      <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6">
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold text-center"
+          className="text-3xl lg:text-4xl font-bold text-center"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
@@ -19,7 +19,7 @@ export default function AboutMe() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-300 text-center max-w-2xl mx-auto text-base sm:text-lg"
+          className="text-gray-300 text-center max-w-3xl mx-auto text-base lg:text-lg"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}

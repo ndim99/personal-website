@@ -8,6 +8,15 @@ export default function AboutMe() {
       className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
     >
       <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6">
+        <motion.img
+          src="/nikola.png"
+          alt="Nikola's profile picture"
+          className="rounded-full shadow-lg mx-auto w-40 h-40 lg:w-48 lg:h-48 border-2 border-white"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        />
         <motion.h2
           className="text-3xl lg:text-4xl font-bold text-center"
           initial={{ opacity: 0, scale: 0.8 }}

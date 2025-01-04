@@ -32,7 +32,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Hamburger Icon */}
-        <div className="sm:hidden pt-2">
+        <div className="sm:hidden pt-[7px]">
           <button className="text-white" onClick={() => setMenuOpen(!menuOpen)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -65,8 +65,7 @@ export default function Skills() {
             },
             {
               title: "Tools & Methodologies",
-              description:
-                "Git, Agile Development, Unit and Integration Testing, CI/CD",
+              description: "Git, Unit and Integration Testing",
             },
           ].map((skill, index) => (
             <motion.div

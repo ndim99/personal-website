@@ -1,13 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
 import ExperienceBox from "./ExperienceBox";
-import NumbersAnimation from "../NumbersAnimation";
 
 export default function Experience() {
   return (
-    <section id="experience" className="2xl:py-20 lg:py-12 py-8 relative">
-      {/* Animated Numbers */}
-      <NumbersAnimation />
+    <section
+      id="experience"
+      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
+    >
+      {/* Animated Numbers
+      <NumbersAnimation /> */}
       <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6">
         {/* Experience Title */}
         <motion.h2

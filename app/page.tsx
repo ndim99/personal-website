@@ -1,4 +1,3 @@
-import AboutMe from "./components/AboutMe";
 import BackToTopButton from "./components/BackToTop";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -12,7 +11,6 @@ export default function Home() {
       <BackToTopButton />
       <Header />
       <Hero />
-      <AboutMe />
       <Experience />
       <Skills />
       <Contact />

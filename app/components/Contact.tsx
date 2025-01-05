@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import NumbersAnimation from "./NumbersAnimation";
 
 export default function Contact() {
   const linkClass =
@@ -10,10 +9,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="2xl:py-20 lg:py-12 py-8 relative overflow-hidden"
+      className="2xl:py-20 lg:py-12 py-8 relative overflow-hidden bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
     >
-      {/* Animated Numbers */}
-      <NumbersAnimation />
       <div className="container mx-auto px-6 text-center flex flex-col 2xl:gap-8 lg:gap-7 gap-6 z-10 relative">
         {/* Title with animation when in view */}
         <motion.h2

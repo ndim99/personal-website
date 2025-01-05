@@ -17,9 +17,6 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden sm:flex space-x-6 font-medium text-gray-300">
-          <Link href="#about" className="hover:text-white">
-            About
-          </Link>
           <Link href="#experience" className="hover:text-white">
             Experience
           </Link>
@@ -48,16 +45,8 @@ export default function Header() {
       <div
         className={`${
           menuOpen ? "block" : "hidden"
-        } text-gray-300 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] py-2.5 px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}
+        } text-gray-300 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] pb-2.5 via-[#0a131b] to-[#0f0f0f] px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}
       >
-        <Link
-          href="#about"
-          className="hover:text-white"
-          onClick={() => setMenuOpen(false)}
-        >
-          About
-        </Link>
-
         <Link
           href="#experience"
           className="hover:text-white"
@@ -65,7 +54,6 @@ export default function Header() {
         >
           Experience
         </Link>
-
         <Link
           href="#skills"
           className="hover:text-white"
@@ -73,7 +61,6 @@ export default function Header() {
         >
           Skills
         </Link>
-
         <Link
           href="#contact"
           className="hover:text-white"

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import NumbersAnimation from "../NumbersAnimation";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 50 },
@@ -10,8 +11,9 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] relative overflow-hidden"
+      className="2xl:py-20 lg:py-12 py-8 relative overflow-hidden"
     >
+      <NumbersAnimation />
       <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6 z-10 relative">
         {/* Section Title */}
         <motion.h2

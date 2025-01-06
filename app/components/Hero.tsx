@@ -15,6 +15,8 @@ export default function Hero() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const buttonClassName =
+    "w-[150px] py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-150 2xl:text-lg text-base font-medium";
   return (
     <section
       id="hero"
@@ -33,7 +35,7 @@ export default function Hero() {
         <motion.img
           src="/nikola.png"
           alt="Nikola's profile picture"
-          className="rounded-full shadow-lg mx-auto w-40 h-40 lg:w-48 lg:h-48 border-2 border-white 2xl:mt-0 lg:mt-10 mt-12"
+          className="rounded-full shadow-lg mx-auto w-36 h-36 sm:w-40 sm:h-40 lg:w-48 lg:h-48 border-2 border-white 2xl:mt-0 mt-14"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
@@ -74,7 +76,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={scrollToExperienceSection}
-            className="w-[150px] py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-150 text-base font-medium"
+            className={buttonClassName}
           >
             My Experience
           </motion.button>
@@ -82,7 +84,7 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={scrollToSkillsSection}
-            className="w-[150px] py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-150 text-base font-medium"
+            className={buttonClassName}
           >
             My Skills
           </motion.button>

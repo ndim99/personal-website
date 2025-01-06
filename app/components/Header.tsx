@@ -1,9 +1,31 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (
+        !(event.target as HTMLElement).closest("#mobile-menu") &&
+        !(event.target as HTMLElement).closest("#hamburger-menu")
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    } else {
+      document.removeEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [menuOpen]);
+
   return (
     <header
       className={`fixed top-0 w-full bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] z-20 ${
@@ -29,8 +51,8 @@ export default function Header() {
         </div>
 
         {/* Mobile Hamburger Icon */}
-
         <svg
+          id="hamburger-menu"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -43,6 +65,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
+        id="mobile-menu"
         className={`${
           menuOpen ? "block" : "hidden"
         } text-gray-300 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] pb-2.5 via-[#0a131b] to-[#0f0f0f] px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}

@@ -33,6 +33,7 @@ export default function Experience() {
             <ExperienceBox
               link="https://tokensight.io/"
               company="TokenSight"
+              duration="[April 2023 – November 2024]"
               description="TokenSight is a decentralized trading platform supporting multiple blockchain ecosystems. As a front-end engineer, I was responsible for designing and implementing performant and intuitive user interfaces, leveraging React, Next.js, TypeScript, and web3 technologies. My work focused on creating scalable solutions for complex trading workflows and delivering seamless user experiences while integrating the necessary tools to achieve platform functionality."
             />
           </motion.div>
@@ -46,6 +47,7 @@ export default function Experience() {
           >
             <ExperienceBox
               company="Ruby.Exchange"
+              duration="[October 2021 – January 2024]"
               link="https://x.com/ruby_exchange"
               description="Ruby.Exchange is a decentralized trading platform built on the SKALE Network. I contributed to the development of a highly interactive and visually appealing interface, focusing on providing a smooth and efficient trading experience for crypto users. I utilized technologies such as React, Next.js, TypeScript, and blockchain-specific tools optimized for SKALE."
             />
@@ -60,6 +62,7 @@ export default function Experience() {
           >
             <ExperienceBox
               freelance
+              duration="Over 1.5 years"
               link=""
               company="Freelance Front-End Developer"
               description="As a freelance front-end developer, I worked on a variety of projects ranging from landing pages to full web applications. 

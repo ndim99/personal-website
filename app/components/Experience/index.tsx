@@ -47,7 +47,7 @@ export default function Experience() {
           >
             <ExperienceBox
               company="Ruby.Exchange"
-              duration="[October 2021 – January 2024]"
+              duration="[October 2021 – Decembar 2023]"
               link="https://x.com/ruby_exchange"
               description="Ruby.Exchange is a decentralized trading platform built on the SKALE Network. I contributed to the development of a highly interactive and visually appealing interface, focusing on providing a smooth and efficient trading experience for crypto users. I utilized technologies such as React, Next.js, TypeScript, and blockchain-specific tools optimized for SKALE."
             />

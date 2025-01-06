@@ -56,20 +56,20 @@ export default function Hero() {
           className="text-base lg:text-lg 2xl:text-xl text-gray-300"
         >
           I{"’"}m an intermediate frontend engineer with a strong blockchain
-          background. With 4 years of experience, I{"’"}ve contributed to many
-          projects, primarily in the crypto/web3 domain. Most of my professional
-          journey has revolved around DEX platforms, where I{"’"}ve implemented
-          numerous features across the stack. My previous professional
-          experiences include TokenSight and Ruby Exchange. <br /> My expertise
-          lies in crafting beautiful and functional UIs using React and Next.js,
-          though I{"’"}m well-versed in a wide range of frontend libraries and
-          frameworks, including web3 libraries. Beyond development, I{"’"}m
-          deeply committed to continuous growth. I am deeply involved in the
-          crypto space, staying ahead of trends and consistently advancing my
-          skills to push boundaries as an engineer. <br /> I consider myself a
-          team player who thrives in startup environments, and I{"’"}m driven by
-          the desire to grow personally while building products that people
-          genuinely love to use.
+          background. With more than 4 years of experience, I{"’"}ve contributed
+          to many projects, primarily in the crypto/web3 domain. Most of my
+          professional journey has revolved around DEX platforms, where I{"’"}ve
+          implemented numerous features across the stack. My previous
+          professional experiences include TokenSight and Ruby Exchange. <br />{" "}
+          My expertise lies in crafting beautiful and functional UIs using React
+          and Next.js, though I{"’"}m well-versed in a wide range of frontend
+          libraries and frameworks, including web3 libraries. Beyond
+          development, I{"’"}m deeply committed to continuous growth. I am
+          deeply involved in the crypto space, staying ahead of trends and
+          consistently advancing my skills to push boundaries as an engineer.{" "}
+          <br /> I consider myself a team player who thrives in startup
+          environments, and I{"’"}m driven by the desire to grow personally
+          while building products that people genuinely love to use.
         </motion.p>
         <motion.div className="sm:flex hidden items-center justify-center sm:flex-row flex-col 2xl:gap-8 lg:gap-7 gap-6">
           <motion.button

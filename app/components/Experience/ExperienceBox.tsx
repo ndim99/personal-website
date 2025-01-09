@@ -32,7 +32,7 @@ export default function ExperienceBox({
           Position: Front-End Developer (Freelance)
         </p>
         <p className="text-lg lg:text-xl font-semibold">Duration: {duration}</p>
-        <p className="text-gray-300 text-base lg:text-lg font-normal">
+        <p className="text-gray-200 text-base lg:text-lg font-normal">
           {description}
         </p>
       </div>
@@ -49,7 +49,7 @@ export default function ExperienceBox({
         Position: Front-End Engineer
       </p>
       <p className="text-lg lg:text-xl font-semibold">Duration: {duration}</p>
-      <p className="text-gray-300 text-base lg:text-lg font-normal">
+      <p className="text-gray-200 text-base lg:text-lg font-normal">
         {description}
       </p>
     </Link>

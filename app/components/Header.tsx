@@ -28,17 +28,17 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f] z-20 ${
+      className={`fixed top-0 w-full bg-gradient-to-r from-[#0f0f0f] via-[#081117] to-[#0f0f0f] z-20 ${
         menuOpen ? "" : "border-b border-[#333] shadow-md"
       } flex items-center`}
     >
       <nav className="container mx-auto px-6 2xl:py-4 lg:py-3 py-2.5 flex justify-between items-center">
-        <h1 className="lg:text-2xl text-xl font-bold text-white">
+        <Link href="#hero" className="lg:text-2xl text-xl font-bold text-white">
           My Portfolio
-        </h1>
+        </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden sm:flex space-x-6 font-medium text-gray-300">
+        <div className="hidden sm:flex space-x-6 font-medium text-gray-200">
           <Link href="#experience" className="hover:text-white">
             Experience
           </Link>
@@ -68,7 +68,7 @@ export default function Header() {
         id="mobile-menu"
         className={`${
           menuOpen ? "block" : "hidden"
-        } text-gray-300 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] pb-2.5 via-[#0a131b] to-[#0f0f0f] px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}
+        } text-gray-200 font-medium sm:hidden bg-gradient-to-r from-[#0f0f0f] pb-2.5 via-[#081117] to-[#0f0f0f] px-6 absolute w-full top-12 left-0 shadow-md flex flex-col gap-2.5 border-b border-[#333]`}
       >
         <Link
           href="#experience"

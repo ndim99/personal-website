@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="2xl:py-20 lg:py-12 py-8 relative overflow-hidden bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
+      className="2xl:py-20 lg:py-12 py-8 relative overflow-hidden bg-gradient-to-r from-[#0f0f0f] via-[#081117] to-[#0f0f0f]"
     >
       <div className="container mx-auto px-6 text-center flex flex-col 2xl:gap-8 lg:gap-7 gap-6 z-10 relative">
         {/* Title with animation when in view */}
@@ -24,7 +24,7 @@ export default function Contact() {
         </motion.h2>
         {/* Description with animation when in view */}
         <motion.p
-          className="text-gray-300 text-base font-normal"
+          className="text-gray-200 text-base font-normal"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}

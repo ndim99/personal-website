@@ -78,7 +78,7 @@ export default function Skills() {
               <h3 className="text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                 {skill.title}
               </h3>
-              <p className="text-gray-300 mt-3 text-base lg:text-lg">
+              <p className="text-gray-200 mt-3 text-base lg:text-lg">
                 {skill.description}
               </p>
             </motion.div>

@@ -35,7 +35,7 @@ export default function Hero() {
         <motion.img
           src="/nikola.png"
           alt="Nikola's profile picture"
-          className="rounded-full shadow-lg mx-auto w-36 h-36 sm:w-40 sm:h-40 lg:w-48 lg:h-48 border-2 border-white 2xl:mt-0 mt-14"
+          className="rounded-full shadow-lg mx-auto w-36 h-36 sm:w-40 sm:h-40 lg:w-48 lg:h-48 border-2 border-white 2xl:mt-4 mt-14"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
@@ -49,28 +49,48 @@ export default function Hero() {
         >
           Hello, I am Nikola
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-          className="text-base lg:text-lg 2xl:text-xl text-gray-300"
-        >
-          I{"’"}m an intermediate frontend engineer with a strong blockchain
-          background. With more than 4 years of experience, I{"’"}ve contributed
-          to many projects, primarily in the crypto/web3 domain. Most of my
-          professional journey has revolved around DEX platforms, where I{"’"}ve
-          implemented numerous features across the stack. My previous
-          professional experiences include TokenSight and Ruby Exchange. <br />{" "}
-          My expertise lies in crafting beautiful and functional UIs using React
-          and Next.js, though I{"’"}m well-versed in a wide range of frontend
-          libraries and frameworks, including web3 libraries. Beyond
-          development, I{"’"}m deeply committed to continuous growth. I am
-          deeply involved in the crypto space, staying ahead of trends and
-          consistently advancing my skills to push boundaries as an engineer.{" "}
-          <br /> I consider myself a team player who thrives in startup
-          environments, and I{"’"}m driven by the desire to grow personally
-          while building products that people genuinely love to use.
-        </motion.p>
+        {/* Introduction */}
+        <div className="flex flex-col 2xl:gap-4 lg:gap-3.5 gap-3">
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+            className="text-base lg:text-lg 2xl:text-xl text-gray-200"
+          >
+            I{"’"}m an intermediate frontend engineer with a strong blockchain
+            background. With more than 4 years of experience, I{"’"}ve
+            contributed to many projects, primarily in the crypto/web3 domain.
+            Most of my professional journey has revolved around DEX platforms,
+            where I{"’"}ve implemented numerous features across the stack. My
+            previous professional experiences include TokenSight and Ruby
+            Exchange.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.7, ease: "easeOut" }}
+            className="text-base lg:text-lg 2xl:text-xl text-gray-200"
+          >
+            My expertise lies in crafting beautiful and functional UIs using
+            React and Next.js, though I{"’"}m well-versed in a wide range of
+            frontend libraries and frameworks, including web3 libraries. Beyond
+            development, I{"’"}m deeply committed to continuous growth. I am
+            deeply involved in the crypto space, staying ahead of trends and
+            consistently advancing my skills to push boundaries as an engineer.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
+            className="text-base lg:text-lg 2xl:text-xl text-gray-200"
+          >
+            I consider myself a team player who thrives in startup environments,
+            and I{"’"}m driven by the desire to grow personally while building
+            products that people genuinely love to use.
+          </motion.p>
+        </div>
         <motion.div className="sm:flex hidden items-center justify-center sm:flex-row flex-col 2xl:gap-8 lg:gap-7 gap-6">
           <motion.button
             whileHover={{ scale: 1.05 }}

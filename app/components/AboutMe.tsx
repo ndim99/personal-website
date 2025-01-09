@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#0a131b] to-[#0f0f0f]"
+      className="2xl:py-20 lg:py-12 py-8 bg-gradient-to-r from-[#0f0f0f] via-[#081117] to-[#0f0f0f]"
     >
       <div className="container mx-auto px-6 flex flex-col 2xl:gap-8 lg:gap-7 gap-6">
         <motion.img
@@ -28,7 +28,7 @@ export default function AboutMe() {
         </motion.h2>
 
         <motion.p
-          className="text-gray-300 text-center max-w-3xl mx-auto text-base lg:text-lg"
+          className="text-gray-200 text-center max-w-3xl mx-auto text-base lg:text-lg"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}

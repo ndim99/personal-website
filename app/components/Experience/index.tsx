@@ -33,7 +33,7 @@ export default function Experience() {
             <ExperienceBox
               link="https://tokensight.io/"
               company="TokenSight"
-              duration="[April 2023 – November 2024]"
+              duration="[April 2023 – Decembar 2024]"
               description="TokenSight is a decentralized trading platform supporting multiple blockchain ecosystems. As a front-end engineer, I was responsible for designing and implementing performant and intuitive user interfaces, leveraging React, Next.js, TypeScript, and web3 technologies. My work focused on creating scalable solutions for complex trading workflows and delivering seamless user experiences while integrating the necessary tools to achieve platform functionality."
             />
           </motion.div>

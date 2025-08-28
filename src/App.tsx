@@ -14,21 +14,26 @@ function App() {
   const [expandedKeys, setExpandedKeys] = useState(['hero']);
   return (
     <div className="w-full min-h-dvh bg-no-repeat bg-fixed bg-cover bg-body-bg bg-[url('/wallpaper.jpg')]">
-      <div className="w-full flex flex-col sm:gap-8 gap-6 sm:px-6 px-3 sm:py-6 py-4 max-w-[1440px] mx-auto">
+      <div className="w-full flex flex-col gap-6 sm:px-6 px-3 sm:py-6 py-4 max-w-[1440px] mx-auto">
 
-        <div className='flex justify-end items-center w-full gap-3 text-white'>
-          <Link href='https://github.com/ndim99?tab=overview&from=2025-08-01&to=2025-08-28' target='_blank' className='cursor-pointer'><Icon name='github' className='size-[25px]' /></Link>
-          <Link href='https://gitlab.com/ndim99' target='_blank' className='cursor-pointer'>  <Icon name='gitlab' className='size-7' /></Link>
-          <Link href='https://www.linkedin.com/in/ndim19/' target='_blank' className='cursor-pointer'><Icon name='linkedIn' /></Link>
-          <Link href='https://t.me/username/@nd2452' target='_blank' className='cursor-pointer'><Icon name='telegram' /></Link>
-          <Button text='Experience' scrollToId="experience" />
-          <Button text='Skills' scrollToId="skills" />
+        <div className='flex sm:justify-end justify-between items-center w-full gap-3 text-white'>
+          <div className='flex items-center gap-3'>
+            <Link href='https://github.com/ndim99?tab=overview&from=2025-08-01&to=2025-08-28' target='_blank' className='cursor-pointer'><Icon name='github' className='size-[25px]' /></Link>
+            <Link href='https://gitlab.com/ndim99' target='_blank' className='cursor-pointer'>  <Icon name='gitlab' className='size-7' /></Link>
+            <Link href='https://www.linkedin.com/in/ndim19/' target='_blank' className='cursor-pointer'><Icon name='linkedIn' /></Link>
+            <Link href='https://t.me/username/@nd2452' target='_blank' className='cursor-pointer'><Icon name='telegram' /></Link>
+          </div>
+          <div className='flex items-center gap-3'>
+            <Button text='Experience' scrollToId="experience" />
+            <Button text='Skills' scrollToId="skills" />
+          </div>
         </div>
 
-        <div className='flex flex-col gap-3 w-full'>
+        <div className='flex flex-col gap-2 w-full'>
           <Title icon='person' title='About me' />
           <CardWrapper>
-            <p className='text-sm font-normal'> As a <b>Frontend Engineer</b>, I specialize in building <b>scalable, user-focused web applications</b> and <b>browser extensions</b>. I have a strong background in the <b>crypto</b> and <b>Web3</b> space, working on <b>DEX platforms</b> and <b>decentralized applications</b> where I’ve tackled challenges related to <b>security, performance,</b> and <b>scalability.</b> <br /><br /> My expertise lies in crafting <b>intuitive, high-performance user interfaces</b> using modern <b>frontend frameworks</b>, while also leveraging a broad range of tools, including <b>Web3 technologies.</b> I am committed to writing <b>maintainable solutions</b> and staying up to date with <b>modern development practices.</b>  <br /><br />Driven by <b>curiosity</b> and <b>continuous learning</b>, I thrive in <b>collaborative, fast-paced environments</b>, especially <b>startups</b>, where I can contribute to products that users genuinely enjoy.</p>
+            <p className='text-sm font-normal'>Hi, I’m Nikola, a <b>Frontend Engineer</b> passionate about building <b>scalable, user-focused web applications</b> and <b>browser extensions</b>. I have a strong background in the <b>crypto</b> and <b>Web3</b> space, working on <b>DEX platforms</b>, <b>decentralized applications</b>, and <b>browser-based tools</b> where I’ve tackled challenges related to <b>security, performance,</b> and <b>scalability.</b>
+              <br /><br /> My expertise lies in crafting <b>intuitive, high-performance user interfaces</b> using modern <b>frontend frameworks</b>, while also leveraging a broad range of tools, including <b>Web3 technologies.</b> I am committed to writing <b>maintainable solutions</b> and staying up to date with <b>modern development practices.</b>  <br /><br />Driven by <b>curiosity</b> and <b>continuous learning</b>, I thrive in <b>collaborative, fast-paced environments</b>, especially <b>startups</b>, where I can contribute to products that users genuinely enjoy.</p>
           </CardWrapper>
         </div>
 

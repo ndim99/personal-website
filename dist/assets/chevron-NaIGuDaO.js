@@ -1,0 +1,1 @@
+import{r as e}from"./index-DrMsbov9.js";const o=t=>e.createElement("svg",{width:11,height:16,viewBox:"0 0 11 16",fill:"none",xmlns:"http://www.w3.org/2000/svg",...t},e.createElement("path",{d:"M2.08789 2.54292e-07L10.0879 8L2.08789 16L0.911768 14.8239L7.73585 8L0.911769 1.17612L2.08789 2.54292e-07Z",fill:"currentColor"}));export{o as default};

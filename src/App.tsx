@@ -32,7 +32,7 @@ function App() {
         <div className='flex flex-col gap-2 w-full'>
           <Title icon='person' title='About me' />
           <CardWrapper>
-            <p className='text-sm font-normal'>Hi, I’m Nikola, a <b>Frontend Engineer</b> passionate about building <b>scalable, user-focused web applications</b> and <b>browser extensions</b>. I have a strong background in the <b>crypto</b> and <b>Web3</b> space, working on <b>DEX platforms</b>, <b>decentralized applications</b>, and <b>browser-based tools</b> where I’ve tackled challenges related to <b>security, performance,</b> and <b>scalability.</b>
+            <p className='text-sm font-normal'>Hi, I’m <b>Nikola</b>, a <b>Frontend Engineer</b> passionate about building <b>scalable, user-focused web applications</b> and <b>browser extensions</b>. I have a strong background in the <b>crypto</b> and <b>Web3</b> space, working on <b>DEX platforms</b>, <b>decentralized applications</b>, and <b>browser-based tools</b> where I’ve tackled challenges related to <b>security, performance,</b> and <b>scalability.</b>
               <br /><br /> My expertise lies in crafting <b>intuitive, high-performance user interfaces</b> using modern <b>frontend frameworks</b>, while also leveraging a broad range of tools, including <b>Web3 technologies.</b> I am committed to writing <b>maintainable solutions</b> and staying up to date with <b>modern development practices.</b>  <br /><br />Driven by <b>curiosity</b> and <b>continuous learning</b>, I thrive in <b>collaborative, fast-paced environments</b>, especially <b>startups</b>, where I can contribute to products that users genuinely enjoy.</p>
           </CardWrapper>
         </div>

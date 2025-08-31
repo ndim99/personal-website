@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "Public Sans";
+  src: url("../public/fonts/PublicSans.ttf");
+  font-weight: 200 800;
+  font-display: swap;
+}
+@font-face {
   font-family: "Wix Madefor Display";
   src: url("../public/fonts/WixMadeforDisplay.ttf");
   font-weight: 200 800;
@@ -22,6 +28,8 @@
 }
 
 @theme {
+  --font-sans: "Wix Madefor Display", "Inter", "Noto Sans", sans-serif;
+    --font-public: "Public Sans", "Noto Sans", sans-serif;
   --color-primary: #FFFFFF80;
 
   --bg-title-gradient: 86.74deg, #00d9ff 0%, #008afc 25.6%, #0066ba 62.17%, #f7359e 96.16%;

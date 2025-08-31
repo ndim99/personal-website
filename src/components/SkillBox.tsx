@@ -5,7 +5,7 @@ export default function SkillBox({ title, description, skills }: { title: string
   return (
     <CardWrapper>
       <div className="flex flex-col gap-1">
-        <p className="text-base font-bold">{title}</p>
+        <h3 className="text-base font-bold">{title}</h3>
         <p className="text-sm font-medium">{description}</p>
       </div>
       <BulletList items={skills} />
